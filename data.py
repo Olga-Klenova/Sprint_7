@@ -1,19 +1,29 @@
-class DataForCourier:
-    CREATE_COURIER = {
-        "login": "OlkaOK",
-        "password": "12345",
-        "firstName": "Olka"
-    }
-
-class DataForAuth:
-    CREATE_ID = {
-        "login": "typ",
-        "password": "1234"
+COURIER_CREDENTIALS_ONE = {
+    "login": "Tosha Bay",
+    "password": "Abcde_i$BeeC2E_Show_Internet",
+    "firstName": "Toshaa"
 }
 
-class DataForOrder:
-    CREATE_ORDER_BODY = {
-        "firstName": "Olga",
+NON_EXISTENT_COURIER_CREDENTIALS = {
+    "login": "Super Cat",
+    "password": "Super;Cat",
+    "firstName": "Tosha BayBay"
+}
+
+COURIER_CREDENTIALS_WITHOUT_LOGIN = {
+    "login": "",
+    "password": "Abcde_i$BeeC2E",
+    "firstName": "Toshaa"
+}
+
+COURIER_CREDENTIALS_WITHOUT_PASSWORD  = {
+    "login": "Tosha Bay",
+    "password": "",
+    "firstName": "Toshaa"
+}
+
+BLACK_AND_GRAY = {
+    "firstName": "Olga",
         "lastName": "OK",
         "address": "Arial str., 13",
         "metroStation": 4,
@@ -24,21 +34,10 @@ class DataForOrder:
         "color": [
             "BLACK"
         ]
-    }
-class ErrorMessages:
-    INSUFFICIENT_DATA_CREATE_MESSAGE = {'message': 'Недостаточно данных для создания учетной записи'}
-    LOGIN_ALREADY_USED_MESSAGE = {'message': 'Этот логин уже используется. Попробуйте другой.'}
-    NOT_FOUND_MESSAGE = {'message': 'Учетная запись не найдена'}
-    INSUFFICIENT_DATA_LOGIN_MESSAGE = {'message':  'Недостаточно данных для входа'}
+}
 
-class OrderData:
-    DEFAULT_ORDER_PAYLOAD = {
-        "firstName": "Ольга",
-        "lastName": "Клен",
-        "address": "Кленовая, д. 3",
-        "metroStation": 25,
-        "phone": "+79991234567",
-        "rentTime": 3,
-        "deliveryDate": "2025-01-30",
-        "comment": "Хочу новую гитару",
-    }
+
+COURIER_LOGIN_ALREADY_USED = "Этот логин уже используется. Попробуйте другой."
+COURIER_CREATION_MISSING_DATA = "Недостаточно данных для создания учетной записи"
+LOGIN_MISSING_DATA = "Недостаточно данных для входа"
+ACCOUNT_NOT_FOUND = "Учетная запись не найдена"
